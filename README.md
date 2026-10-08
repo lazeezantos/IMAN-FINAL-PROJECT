@@ -30,5 +30,6 @@ iman-frontend-track/
 Abdulazeez Reshid 
 
 ## Links
-- GitHub Repository: [your link]
-- Live Website: [your link]
+- GitHub Repository: [View Repository](https://github.com/lazeezantos/IMAN-FINAL-PROJECT)
+
+- Live Website: [View Live Website](https://lazeezantos.github.io/IMAN-FINAL-PROJECT/)
