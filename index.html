@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="IMAN Bootcamp Frontend Track - learn HTML, CSS and JavaScript.">
+  <title>IMAN Bootcamp - Frontend Track</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">💻 IMAN Frontend</a>
+
+      <!-- ☰ button: only visible on phones -->
+      <button id="menu-btn" class="menu-btn" aria-label="Open menu">☰</button>
+
+      <nav id="nav-links" class="nav-links">
+        <a href="#about">About</a>
+        <a href="#learn">Learn</a>
+        <a href="#why">Why IMAN</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+        <!-- dark / light mode button -->
+        <button id="theme-btn" class="theme-btn" aria-label="Change theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== 1. HERO ===== -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>IMAN Bootcamp<br>Frontend Track</h1>
+        <p>Learn how websites are made. Start from zero and build real
+           websites with HTML, CSS and JavaScript.</p>
+        <a href="#contact" class="btn">🚀 Register Now</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+      <div class="hero-image">
+        <img src="images/hero.svg" alt="Code editor with HTML, CSS and JavaScript">
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About the Frontend Track</h2>
+      <p class="section-intro">
+        The frontend is the part of a website that you see and click.
+        In this track you learn how to build it step by step.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">📘</div>
+          <h3>What it is</h3>
+          <p>A beginner-friendly course about building the visible part of websites: text, images, buttons and menus.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎓</div>
+          <h3>What you learn</h3>
+          <p>HTML for structure, CSS for design and JavaScript for interaction.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👥</div>
+          <h3>Who it is for</h3>
+          <p>Beginners, students and anyone who wants to start a career in web development.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏆</div>
+          <h3>What you can achieve</h3>
+          <p>Build your own portfolio website and publish it online for everyone to see.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. WHAT YOU'LL LEARN ===== -->
+  <section id="learn" class="section gray">
+    <div class="container">
+      <h2>What You'll Learn</h2>
+      <p class="section-intro">
+        Think of a house: HTML is the walls, CSS is the paint and
+        JavaScript is the electricity that makes things work.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">🧱</div>
+          <h3>HTML</h3>
+          <p>Create the structure of a page: headings, paragraphs, images, links and forms.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🎨</div>
+          <h3>CSS</h3>
+          <p>Style your page with colors, fonts, spacing and layouts.</p>
+        </div>
+        <div class="card">
+          <div class="icon">📱</div>
+          <h3>Responsive Design</h3>
+          <p>Make your website look good on phones, tablets and computers.</p>
+        </div>
+        <div class="card">
+          <div class="icon">⚡</div>
+          <h3>JavaScript</h3>
+          <p>Add logic and interaction: buttons, menus and forms that react to the user.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🌳</div>
+          <h3>DOM Manipulation</h3>
+          <p>Use JavaScript to change the page: text, styles and elements.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛠️</div>
+          <h3>Web Fundamentals</h3>
+          <p>Learn how the web works, plus Git and GitHub to publish your work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. WHY IMAN ===== -->
+  <section id="why" class="section">
+    <div class="container">
+      <h2>Why IMAN Bootcamp?</h2>
+      <p class="section-intro">
+        We focus on doing, not only reading. You will write code every week.
+      </p>
+      <div class="grid grid-4">
+        <div class="card">
+          <div class="icon">⌨️</div>
+          <h3>Practical Learning</h3>
+          <p>Hands-on exercises in every lesson.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🚀</div>
+          <h3>Real Projects</h3>
+          <p>Build projects you can show to others.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🧑‍🏫</div>
+          <h3>Mentorship</h3>
+          <p>Get help and feedback from mentors.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🤝</div>
+          <h3>Community</h3>
+          <p>Learn together with other students.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. STUDENT PROJECTS ===== -->
+  <section id="projects" class="section gray">
+    <div class="container">
+      <h2>Student Projects</h2>
+      <p class="section-intro">
+        Here are some projects built by students. Use the buttons to filter them.
+      </p>
+
+      <!-- Filter buttons: data-filter tells JavaScript which category to show -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="html">🎨 HTML / CSS</button>
+        <button class="filter-btn" data-filter="js">⚡ JavaScript</button>
+      </div>
+
+      <div class="grid">
+        <!-- data-category is used by the filter in script.js -->
+        <div class="card project" data-category="html">
+          <img src="images/project1.svg" alt="Portfolio website preview">
+          <h3>Portfolio Website</h3>
+          <p>A personal website with about, skills and contact sections.</p>
+          <p class="tech">🧩 HTML, CSS</p>
+        </div>
+
+        <div class="card project" data-category="js">
+          <img src="images/project2.svg" alt="To-do app preview">
+          <h3>To-Do App</h3>
+          <p>Add, complete and delete tasks directly in the browser.</p>
+          <p class="tech">🧩 HTML, CSS, JavaScript</p>
+        </div>
+
+        <div class="card project" data-category="html">
+          <img src="images/project3.svg" alt="Restaurant page preview">
+          <h3>Restaurant Page</h3>
+          <p>A responsive landing page with a menu and contact info.</p>
+          <p class="tech">🧩 HTML, CSS</p>
+        </div>
+
+        <div class="card project" data-category="js">
+          <img src="images/project4.svg" alt="Calculator preview">
+          <h3>Calculator</h3>
+          <p>A simple calculator that adds, subtracts, multiplies and divides.</p>
+          <p class="tech">🧩 HTML, CSS, JavaScript</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. TESTIMONIALS ===== -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2>What Students Say</h2>
+      <p class="section-intro">Here is the testimonials from students who have finished the course.</p>
+      <div class="grid">
+        <div class="card">
+          <div class="avatar">👩‍💻</div>
+          <p>"I started with no experience and now I can build my own websites."</p>
+          <h3>Sabrina Yasin</h3>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="card">
+          <div class="avatar">👨‍💻</div>
+          <p>"The mentors were helpful and the projects were fun."</p>
+          <h3>Oumer Ibrahim</h3>
+          <p class="stars">⭐⭐⭐⭐⭐</p>
+        </div>
+        <div class="card">
+          <div class="avatar">🧑‍💻</div>
+          <p>"Great community and very practical lessons."</p>
+          <h3>Muaz Tahir</h3>
+          <p class="stars">⭐⭐⭐⭐</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. FAQ ===== -->
+  <section id="faq" class="section gray">
+    <div class="container">
+      <h2>❓ Frequently Asked Questions</h2>
+      <p class="section-intro">Click a question to see the answer.</p>
+
+      <div class="faq-item">
+        <button class="faq-question">What is the Frontend Track?</button>
+        <div class="faq-answer"><p>A course that teaches you to build websites with HTML, CSS and JavaScript.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Who can join?</button>
+        <div class="faq-answer"><p>Anyone who is interested in web development.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">Do I need previous experience?</button>
+        <div class="faq-answer"><p>No. The track starts from the basics.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What will I learn?</button>
+        <div class="faq-answer"><p>HTML, CSS, responsive design, JavaScript and the DOM.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">How long does the track last?</button>
+        <div class="faq-answer"><p>Write the real duration here (for example: 8 weeks).</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">What projects will I build?</button>
+        <div class="faq-answer"><p>Small websites and apps, and a final project website.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>📩 Contact / Registration</h2>
+      <p class="section-intro">Fill in the form and we will contact you. All fields are required.</p>
+
+      <form id="contact-form" class="form">
+        <label for="name">👤 Name</label>
+        <input type="text" id="name" placeholder="Your name">
+
+        <label for="email">✉️ Email</label>
+        <input type="text" id="email" placeholder="you@example.com">
+
+        <label for="phone">📞 Phone</label>
+        <input type="text" id="phone" placeholder="Your phone number">
+
+        <label for="message">💬 Message</label>
+        <textarea id="message" rows="4" placeholder="Your message"></textarea>
+
+        <p id="form-message"></p>
+        <button type="submit" class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p>© 2026 IMAN Bootcamp Frontend Track</p>
+    <p>Made by Abdulazeez Reshid 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
